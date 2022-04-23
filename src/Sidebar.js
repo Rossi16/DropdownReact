@@ -28,13 +28,7 @@ export default function Sidebar() {
         <div>
             <div className="container_main">
                 <div className="dropdown_form">
-                    {/* <Button variant="primary" onClick={show}>
-                        Sidebar
-                    </Button>
-                    <>
-                        <Offcanvas show={showsidebar} onHide={close}>
-                            <Offcanvas.Header closeButton />
-                            <Offcanvas.Body> */}
+                    
                             <>
                             <Form.Select value={client} onChange={hidehandler}>
                                     <option></option>
@@ -59,9 +53,7 @@ export default function Sidebar() {
                                 </div>:null
                                 }
                                 </>
-                            {/* </Offcanvas.Body>
-                        </Offcanvas>
-                    </> */}
+                            
                 </div>
                 <div className="main_head">
                     <div className="head">
