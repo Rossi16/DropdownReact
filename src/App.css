@@ -36,3 +36,100 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+/* Sidebar */
+
+.container_main{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5%;
+}
+.dropdown_form{
+  
+  width: 30%;
+ padding-left: 10%;
+}
+.button{
+  display: flex;
+  padding-bottom: 2%;
+}
+.button_inner_div{
+  padding-left: 4%;
+
+}
+.label_div{
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+h3{
+  padding-top: 8%;
+}
+
+.content{
+     text-align: start;
+     padding-left: 5%;
+}
+.main{
+  border: 1px solid #ced4da;
+  border-radius: 13px;
+  padding-left: 4%;
+  padding-top: 4%;
+  padding-right: 2%;
+  padding-bottom: 2%;
+}
+#body{
+  padding-bottom: 20%;
+}
+.main_head{
+ width: 50%;
+ padding-right: 5%;
+  
+}
+.content_button{
+position: absolute;
+}
+.main_content{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding-top: 13%;
+}
+.foot_content{
+text-align: start;
+}
+#whatsapp{
+  background-color: darkcyan;
+  border: darkcyan;
+}
+#call{
+  background-color: gainsboro;
+    border: gainsboro;
+    color: black;
+}
+.foot{
+  justify-content: flex-start;
+}
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.head{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 2%;
+}
+.h4_div{
+  width: 60%;
+    text-align: start;
+    padding-left: 4%;
+}
+#searchbox{
+  width: 100%;
+}
+p{
+  text-align: start;
+}
