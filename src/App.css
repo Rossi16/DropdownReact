@@ -42,12 +42,12 @@
 /* Sidebar */
 
 .container_main{
-  display: flex;
+  display: block;
   justify-content: space-between;
-  padding-top: 5%;
 }
 .dropdown_form{
-  
+ 
+  position: fixed;
   width: 30%;
  padding-left: 10%;
 }
@@ -55,6 +55,7 @@
   display: flex;
   padding-bottom: 2%;
 }
+
 .button_inner_div{
   padding-left: 4%;
 
@@ -79,10 +80,9 @@ h3{
   padding-right: 2%;
   padding-bottom: 2%;
 }
-#body{
-  padding-bottom: 20%;
-}
+
 .main_head{
+  float: right;
  width: 50%;
  padding-right: 5%;
   
@@ -132,4 +132,11 @@ text-align: start;
 }
 p{
   text-align: start;
+}
+.label_btn{
+  padding-top: 20%;
+}
+.modal_button{
+  border-radius: 2rem;
+  border-color: azure;
 }

@@ -11,7 +11,9 @@ export default function Sidebar() {
     const [client, setClient] = React.useState('');
     const[showdiv , setShowdiv] = React.useState(false);
     const[showbutton,setShowbutton] = React.useState(false)
-
+    let [cc,setCC]= React.useState("")
+    let [subject,setSubject]=React.useState("")
+    let [text,setText] = React.useState(false);
     const close = () => setShowsidebar(false);
     const show = () => setShowsidebar(true);
 
@@ -23,13 +25,19 @@ export default function Sidebar() {
         setShowbutton(true)
 
     }
+    function change_cc(){
+        setCC("Pelpola Vijaya,Caroll Doyle")
+        setSubject("Internal Milestone Update Needed")
+        setText(true)
+        
+    }
 
     return (
         <div>
             <div className="container_main">
                 <div className="dropdown_form">
                     
-                            <>
+                            <div>
                             <Form.Select value={client} onChange={hidehandler}>
                                     <option></option>
                                     <option >Steve Smith</option>
@@ -52,7 +60,7 @@ export default function Sidebar() {
                                     <p><u>124578963</u></p>
                                 </div>:null
                                 }
-                                </>
+                                </div>
                             
                 </div>
                 <div className="main_head">
@@ -85,18 +93,37 @@ export default function Sidebar() {
                                <Modal.Header closeButton>
                                    <Modal.Title>Email</Modal.Title>
                                </Modal.Header>
-                               <Modal.Body id="body">
+                               <Modal.Body>
                                    <div className="label_div">
                                        <label>To:</label><Form.Control type="email" value={client}/>
                                    </div>
                                    <div className="label_div">
-                                   <label>CC:</label><Form.Control type="email"/>
+                                   <label>CC:</label><Form.Control type="email" value={cc}/>
                                    </div>
                                    <div className="label_div">
-                                   <label>Subject:</label><Form.Control type="text"/>
+                                   <label>Subject:</label><Form.Control type="text" value={subject}/>
                                    </div>
                                    <div className="label_div">
-                                      <Form.Control as="textarea" rows={6}/>
+                                      {
+                                          text ? <div>
+                                              <div>
+                                                  <p><b>Dear Jay Shetty,</b></p>
+                                              </div>
+                                              <div>
+                                                  <p>We need an urgent update for PO#12087633979 as we have not heard from you.Please
+                                                      provide us an update of expected delivery date ASAP.
+                                                  </p>
+                                              </div>
+                                              <div>
+                                                  <p>Jones Ferdinand</p>
+                                                  <label>Brandix Producerment Management</label>
+                                              </div>
+                                          </div> : null
+                                      }
+                                   </div>
+
+                                   <div className="label_btn">
+                                       <button className="modal_button" onClick={change_cc}>Internal Milestones Updates</button>
                                    </div>
    
                                </Modal.Body>
